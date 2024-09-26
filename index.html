@@ -7,7 +7,20 @@
 </head>
 <body>
     <script>
-        console.log("hello world");
+        function getComputerChoice(x){
+           let skaicius = Math.floor(Math.random() * x)
+            if (skaicius === 0){
+                return "rock"
+            }
+            else if (skaicius === 1){
+                return "paper"
+            }
+            else return "scissors";
+        }
+        function getHumanChoice(){
+            
+        }
+        console.log(getComputerChoice(3));
     </script>
 </body>
 </html>
