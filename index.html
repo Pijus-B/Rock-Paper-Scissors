@@ -6,25 +6,7 @@
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <script>
-        function getComputerChoice(x){
-           let num = Math.floor(Math.random() * x)
-            if (num === 0){
-                return "rock"
-            }
-            else if (num === 1){
-                return "paper"
-            }
-            else return "scissors";
-        }
-        function getHumanChoice(){
-            let choice = prompt("Type the valid input (Rock, Paper, Scissors)");
-            choice = choice.toLowerCase();
-            if (choice === "rock" || choice === "paper" || choice === "scissors")
-            return choice;
-            else return "Invalid choice, try again";
-        }
-        console.log(getHumanChoice());
+    <script src="/game.js"></script>
     </script>
 </body>
 </html>
