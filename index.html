@@ -8,19 +8,23 @@
 <body>
     <script>
         function getComputerChoice(x){
-           let skaicius = Math.floor(Math.random() * x)
-            if (skaicius === 0){
+           let num = Math.floor(Math.random() * x)
+            if (num === 0){
                 return "rock"
             }
-            else if (skaicius === 1){
+            else if (num === 1){
                 return "paper"
             }
             else return "scissors";
         }
         function getHumanChoice(){
-            
+            let choice = prompt("Type the valid input (Rock, Paper, Scissors)");
+            choice = choice.toLowerCase();
+            if (choice === "rock" || choice === "paper" || choice === "scissors")
+            return choice;
+            else return "Invalid choice, try again";
         }
-        console.log(getComputerChoice(3));
+        console.log(getHumanChoice());
     </script>
 </body>
 </html>
