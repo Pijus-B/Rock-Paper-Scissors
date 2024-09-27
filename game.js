@@ -10,19 +10,10 @@ function getComputerChoice(x){
  }
  function getHumanChoice(){
      let choice = prompt("Type the valid input (Rock, Paper, Scissors)");
-     if (choice === null) {
-        alert("Game cancelled by the user.");
-        return null;
-    }
-    choice = choice.toLowerCase();
-    while (choice !== "rock" && choice !== "paper" && choice !== "scissors") {
+     choice = choice.toLowerCase();
+     while (choice !== "rock" && choice !== "paper" && choice !== "scissors") {
         alert("Invalid choice. Please type 'Rock', 'Paper', or 'Scissors'.");
         choice = prompt("Type the valid input (Rock, Paper, Scissors)");
-
-        if (choice === null) {
-            alert("Game cancelled by the user.");
-            return null;
-        }
         choice = choice.toLowerCase();
     }
     return choice;
